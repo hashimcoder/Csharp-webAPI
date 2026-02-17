@@ -6,10 +6,23 @@ using Microsoft.IdentityModel.Tokens;
 using NZWalks.API.Mappings;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
+using Serilog;
 
 using Microsoft.Extensions.FileProviders;
+using NZWalks.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+var logger = new LoggerConfiguration()
+     .WriteTo.Console()
+     .WriteTo.File("Logs/NzWalks_Log.txt", rollingInterval: RollingInterval.Day)
+     .MinimumLevel.Information()
+     .CreateLogger();
+
+     builder.Logging.ClearProviders();
+     builder.Logging.AddSerilog(logger);
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -71,6 +84,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 // Add Controllers
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddIdentityCore<IdentityUser>()
        .AddRoles<IdentityRole>()
@@ -112,7 +126,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

@@ -49,10 +49,13 @@ namespace NZWalks.API.Controllers
                 [FromQuery] int pageSize = 1000
            )
            
+        
         {
             var walkDomainModel = await walkRepository.GetAllAsync(filterOn, filterQuery,sortBy,isAscending, pageNumber, pageSize);
+
             // Map Domain Model to DTO
             var walkDto = mapper.Map<List<WalkDto>>(walkDomainModel);
+            throw new Exception("This is new Exception");
             return Ok(walkDto);
         }
         // GET: http://localhost:5000/api/walks/{id}

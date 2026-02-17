@@ -174,3 +174,17 @@
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/obj/Debug/net8.0/NZWalks.API.genruntimeconfig.cache
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/obj/Debug/net8.0/ref/NZWalks.API.dll
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.AspNetCore.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Extensions.Hosting.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Extensions.Logging.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Formatting.Compact.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Settings.Configuration.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.API/bin/Debug/net8.0/Serilog.Sinks.File.dll

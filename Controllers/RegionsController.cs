@@ -1,3 +1,4 @@
+using System.Text.Json;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,7 @@ namespace NZWalks.API.Controllers
     //http://localhost:5000/api/regions
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    // [Authorize]
     public class RegionsController : ControllerBase
 
     {
@@ -21,28 +22,47 @@ namespace NZWalks.API.Controllers
         private readonly NZWalksDbContext dbContext;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
+        private readonly ILogger<RegionsController> logger;
 
-        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper,ILogger<RegionsController> logger)
         {
             this.dbContext = dbContext;
             this.regionRepository = regionRepository;
             this.mapper = mapper;
+            this.logger = logger;
         }
         // Controller methods will go here
         // Action methods for handling HTTP requests related to Regions
 
         // GET: ALL REGIONS
-        //GET: http://localhost:PORTnumber/api/regions
+        // GET: http://localhost:PORTnumber/api/regions
         [HttpGet]
-        [Authorize(Roles = "Reader, Writer")]
+        // [Authorize(Roles = "Reader, Writer")]
         public async Task<IActionResult> GetAll()
-        {    // Get Data from Database - Domain Models
+    
+        {   
+            try
+            {
+                throw new Exception("This is a custom exception");
+
+                 // Get Data from Database - Domain Models
             var regionsDomain = await regionRepository.GetAllAsync();
 
             // Using AutoMapper to map Domain Models to DTOs
             // Return DTOs to client
+
+            logger.LogInformation($"Finished getting all regions request with data:{JsonSerializer.Serialize(regionsDomain)}");
             var RegionDto = mapper.Map<List<RegionDto>>(regionsDomain);
-            return Ok(RegionDto);
+            return Ok(RegionDto);  
+                
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, ex.Message);
+                throw;
+            }
+            
+            
         }
         // Get region by ID
         // GET: http://localhost:PORTnumber/api/regions/{id}
