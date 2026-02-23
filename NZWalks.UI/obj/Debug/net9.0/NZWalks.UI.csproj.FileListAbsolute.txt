@@ -94,3 +94,4 @@
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/obj/Debug/net9.0/NZWalks.UI.pdb
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/obj/Debug/net9.0/NZWalks.UI.genruntimeconfig.cache
 /Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/obj/Debug/net9.0/ref/NZWalks.UI.dll
+/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/obj/Debug/net9.0/NZWalks.UI.sourcelink.json
