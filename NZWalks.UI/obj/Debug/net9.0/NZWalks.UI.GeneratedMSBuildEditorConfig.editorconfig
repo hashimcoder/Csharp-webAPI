@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Regions/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9ucy9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/RegionsController/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uc0NvbnRyb2xsZXIvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
