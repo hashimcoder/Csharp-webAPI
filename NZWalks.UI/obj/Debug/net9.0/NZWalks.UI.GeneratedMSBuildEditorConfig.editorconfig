@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net9.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -28,12 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Regions/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9ucy9pbmRleC5jc2h0bWw=
+[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Regions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9ucy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/RegionsController/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uc0NvbnRyb2xsZXIvaW5kZXguY3NodG1s
+[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Regions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9ucy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Regions/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9ucy9pbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/Views/Shared/Error.cshtml]

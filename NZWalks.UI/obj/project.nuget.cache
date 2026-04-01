@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "H5DwG1TEQeE=",
+  "dgSpecHash": "/yyvT6PB+8s=",
   "success": true,
   "projectFilePath": "/Users/hashimmac/Workspace/ASP.Net/NZWalks/NZWalks.UI/NZWalks.UI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/hashimmac/.nuget/packages/microsoft.netcore.app.ref/9.0.14/microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "/Users/hashimmac/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.14/microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
+    "/Users/hashimmac/.nuget/packages/microsoft.netcore.app.host.osx-arm64/9.0.14/microsoft.netcore.app.host.osx-arm64.9.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
